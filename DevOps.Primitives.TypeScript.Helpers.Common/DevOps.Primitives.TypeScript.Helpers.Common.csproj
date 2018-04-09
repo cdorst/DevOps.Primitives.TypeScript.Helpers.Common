@@ -14,7 +14,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CDorst.DevOps.Primitives.TypeScript" Version="1.0.0" />
+    <PackageReference Include="CDorst.DevOps.Primitives.TypeScript" Version="1.1.0" />
   </ItemGroup>
 
 </Project>
