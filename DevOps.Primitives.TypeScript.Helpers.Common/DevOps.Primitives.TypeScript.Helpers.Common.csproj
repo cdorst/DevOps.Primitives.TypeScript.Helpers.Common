@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
@@ -10,11 +10,11 @@
     <Description>Helpers for building TypeScript type declarations</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>CDorst.DevOps.Primitives.TypeScript.Helpers.Common</PackageId>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CDorst.DevOps.Primitives.TypeScript" Version="1.1.0" />
+    <PackageReference Include="CDorst.DevOps.Primitives.TypeScript" Version="3.1.2" />
   </ItemGroup>
 
 </Project>
