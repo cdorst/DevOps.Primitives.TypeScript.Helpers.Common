@@ -10,11 +10,11 @@
     <Description>Helpers for building TypeScript type declarations</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>CDorst.DevOps.Primitives.TypeScript.Helpers.Common</PackageId>
-    <Version>1.0.2</Version>
+    <Version>2.0.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CDorst.DevOps.Primitives.TypeScript" Version="3.1.2" />
+    <PackageReference Include="CDorst.DevOps.Primitives.TypeScript" Version="4.0.0" />
   </ItemGroup>
 
 </Project>

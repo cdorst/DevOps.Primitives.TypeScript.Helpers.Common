@@ -2,136 +2,196 @@
 {
     public static class Properties
     {
-        public static Property Public(string name, string type, string comment, DecoratorList decoratorList = null, Expression assignment = null)
+        public static Property Public(
+            in string name,
+            in string type,
+            in string comment,
+            in DecoratorList decoratorList = default,
+            in Expression assignment = default)
             => new Property(
-                name,
-                type,
-                comment,
+                in name,
+                in type,
+                in comment,
                 AccessModifiers.Public,
                 isStatic: false,
                 isReadonly: false,
-                decoratorList,
-                assignment);
+                in decoratorList,
+                in assignment);
 
-        public static Property PublicReadonly(string name, string type, string comment, DecoratorList decoratorList = null, Expression assignment = null)
+        public static Property PublicReadonly(
+            in string name,
+            in string type,
+            in string comment,
+            in DecoratorList decoratorList = default,
+            in Expression assignment = default)
             => new Property(
-                name,
-                type,
-                comment,
+                in name,
+                in type,
+                in comment,
                 AccessModifiers.Public,
                 isStatic: false,
                 isReadonly: true,
-                decoratorList,
-                assignment);
+                in decoratorList,
+                in assignment);
 
-        public static Property PublicStatic(string name, string type, string comment, DecoratorList decoratorList = null, Expression assignment = null)
+        public static Property PublicStatic(
+            in string name,
+            in string type,
+            in string comment,
+            in DecoratorList decoratorList = default,
+            in Expression assignment = default)
             => new Property(
-                name,
-                type,
-                comment,
+                in name,
+                in type,
+                in comment,
                 AccessModifiers.Public,
                 isStatic: true,
                 isReadonly: false,
-                decoratorList,
-                assignment);
+                in decoratorList,
+                in assignment);
 
-        public static Property PublicStaticReadonly(string name, string type, string comment, DecoratorList decoratorList = null, Expression assignment = null)
+        public static Property PublicStaticReadonly(
+            in string name,
+            in string type,
+            in string comment,
+            in DecoratorList decoratorList = default,
+            in Expression assignment = default)
             => new Property(
-                name,
-                type,
-                comment,
+                in name,
+                in type,
+                in comment,
                 AccessModifiers.Public,
                 isStatic: true,
                 isReadonly: true,
-                decoratorList,
-                assignment);
+                in decoratorList,
+                in assignment);
 
-        public static Property Protected(string name, string type, string comment, DecoratorList decoratorList = null, Expression assignment = null)
+        public static Property Protected(
+            in string name,
+            in string type,
+            in string comment,
+            in DecoratorList decoratorList = default,
+            in Expression assignment = default)
             => new Property(
-                name,
-                type,
-                comment,
+                in name,
+                in type,
+                in comment,
                 AccessModifiers.Protected,
                 isStatic: false,
                 isReadonly: false,
-                decoratorList,
-                assignment);
+                in decoratorList,
+                in assignment);
 
-        public static Property ProtectedReadonly(string name, string type, string comment, DecoratorList decoratorList = null, Expression assignment = null)
+        public static Property ProtectedReadonly(
+            in string name,
+            in string type,
+            in string comment,
+            in DecoratorList decoratorList = default,
+            in Expression assignment = default)
             => new Property(
-                name,
-                type,
-                comment,
+                in name,
+                in type,
+                in comment,
                 AccessModifiers.Protected,
                 isStatic: false,
                 isReadonly: true,
-                decoratorList,
-                assignment);
+                in decoratorList,
+                in assignment);
 
-        public static Property ProtectedStatic(string name, string type, string comment, DecoratorList decoratorList = null, Expression assignment = null)
+        public static Property ProtectedStatic(
+            in string name,
+            in string type,
+            in string comment,
+            in DecoratorList decoratorList = default,
+            in Expression assignment = default)
             => new Property(
-                name,
-                type,
-                comment,
+                in name,
+                in type,
+                in comment,
                 AccessModifiers.Protected,
                 isStatic: true,
                 isReadonly: false,
-                decoratorList,
-                assignment);
+                in decoratorList,
+                in assignment);
 
-        public static Property ProtectedStaticReadonly(string name, string type, string comment, DecoratorList decoratorList = null, Expression assignment = null)
+        public static Property ProtectedStaticReadonly(
+            in string name,
+            in string type,
+            in string comment,
+            in DecoratorList decoratorList = default,
+            in Expression assignment = default)
             => new Property(
-                name,
-                type,
-                comment,
+                in name,
+                in type,
+                in comment,
                 AccessModifiers.Protected,
                 isStatic: true,
                 isReadonly: true,
-                decoratorList,
-                assignment);
+                in decoratorList,
+                in assignment);
 
-        public static Property Private(string name, string type, string comment, DecoratorList decoratorList = null, Expression assignment = null)
+        public static Property Private(
+            in string name,
+            in string type,
+            in string comment,
+            in DecoratorList decoratorList = default,
+            in Expression assignment = default)
             => new Property(
-                name,
-                type,
-                comment,
+                in name,
+                in type,
+                in comment,
                 AccessModifiers.Private,
                 isStatic: false,
                 isReadonly: false,
-                decoratorList,
-                assignment);
+                in decoratorList,
+                in assignment);
 
-        public static Property PrivateReadonly(string name, string type, string comment, DecoratorList decoratorList = null, Expression assignment = null)
+        public static Property PrivateReadonly(
+            in string name,
+            in string type,
+            in string comment,
+            in DecoratorList decoratorList = default,
+            in Expression assignment = default)
             => new Property(
-                name,
-                type,
-                comment,
+                in name,
+                in type,
+                in comment,
                 AccessModifiers.Private,
                 isStatic: false,
                 isReadonly: true,
-                decoratorList,
-                assignment);
+                in decoratorList,
+                in assignment);
 
-        public static Property PrivateStatic(string name, string type, string comment, DecoratorList decoratorList = null, Expression assignment = null)
+        public static Property PrivateStatic(
+            in string name,
+            in string type,
+            in string comment,
+            in DecoratorList decoratorList = default,
+            in Expression assignment = default)
             => new Property(
-                name,
-                type,
-                comment,
+                in name,
+                in type,
+                in comment,
                 AccessModifiers.Private,
                 isStatic: true,
                 isReadonly: false,
-                decoratorList,
-                assignment);
+                in decoratorList,
+                in assignment);
 
-        public static Property PrivateStaticReadonly(string name, string type, string comment, DecoratorList decoratorList = null, Expression assignment = null)
+        public static Property PrivateStaticReadonly(
+            in string name,
+            in string type,
+            in string comment,
+            in DecoratorList decoratorList = default,
+            in Expression assignment = default)
             => new Property(
-                name,
-                type,
-                comment,
+                in name,
+                in type,
+                in comment,
                 AccessModifiers.Private,
                 isStatic: true,
                 isReadonly: true,
-                decoratorList,
-                assignment);
+                in decoratorList,
+                in assignment);
     }
 }

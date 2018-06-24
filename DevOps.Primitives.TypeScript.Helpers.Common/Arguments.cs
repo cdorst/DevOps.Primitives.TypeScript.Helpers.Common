@@ -2,7 +2,6 @@
 {
     public static class Arguments
     {
-        public static Argument Argument(string literal)
-            => new Argument(literal);
+        public static Argument Argument(in string literal) => new Argument(in literal);
     }
 }

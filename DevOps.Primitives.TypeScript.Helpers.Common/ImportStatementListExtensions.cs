@@ -5,7 +5,7 @@ namespace DevOps.Primitives.TypeScript.Helpers.Common
 {
     public static class ImportStatementListExtensions
     {
-        public static ImportStatementList Merge(this ImportStatementList instance, ImportStatementList given)
+        public static ImportStatementList Merge(this ImportStatementList instance, in ImportStatementList given)
             => instance.Merge<ImportStatementList, ImportStatement, ImportStatementListAssociation>(given, Instance);
     }
 }

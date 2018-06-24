@@ -2,7 +2,7 @@
 {
     public static class ImportStatements
     {
-        public static ImportStatement Import(string exportName, string moduleName)
-            => new ImportStatement(exportName, moduleName);
+        public static ImportStatement Import(in string exportName, in string moduleName)
+            => new ImportStatement(in exportName, in moduleName);
     }
 }
